@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" id="punk-svg-2128">
+<defs>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#fff"/>
+        <stop offset="50%" stop-color="#888"/>
+        <stop offset="100%" stop-color="#fff"/>
+    </linearGradient>
+    <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+</defs>
+
+
+
+<defs>
+<filter id="sw_2128_watchAlt" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/></filter>
+<linearGradient id="gl_2128_watchAlt" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="rgba(255,255,255,0.4)"/><stop offset="30%" stop-color="rgba(255,255,255,0.02)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></linearGradient>
+<clipPath id="cp_2128_watchAlt">
+    <circle cx="256" cy="256" r="152.58281361777335"/>
+</clipPath>
+<pattern id="wf_2128_watchAlt" x="0" y="0" width="12.296838860493153" height="14.77265705820173" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="none" stroke="black" stroke-opacity="0.2" stroke-width="1"/></pattern>
+<pattern id="cf_2128_watchAlt" x="0" y="0" width="19.5149775641039" height="15.75204671593383" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="10" height="10" fill="black" fill-opacity="0.1"/><rect x="10" y="10" width="10" height="10" fill="black" fill-opacity="0.1"/></pattern>
+<pattern id="hc_2128_watchAlt" x="0" y="0" width="22.05128647154197" height="20.373004730325192" patternUnits="userSpaceOnUse"><path d="M 8.66,0 L 17.32,5 L 17.32,10 L 8.66,15 L 0,10 L 0,5 Z" fill="none" stroke="white" stroke-opacity="0.1" stroke-width="1"/></pattern>
+<pattern id="dp_2128_watchAlt" x="0" y="0" width="1" height="1" patternUnits="userSpaceOnUse">
+    <circle cx="0.5" cy="0.5" r="0.2" fill="white" />
+</pattern>
+<filter id="tg_2128_watchAlt" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="1.5" result="blur" />
+    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+</filter>
+<style>
+.hr-hand, .mn-hand, .sc-hand { transform-origin: 0px 0px; transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44); }
+.watch-face:hover { filter: brightness(1.2); cursor: pointer; }
+</style>
+</defs>
+
+<style>
+@keyframes gl{0%,87%,100%{opacity:0}90%{opacity:.4}93%{opacity:0}}.glr{animation:gl 10s infinite}
+    @keyframes tm-neon {
+        0% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 6px #ff0000); fill: #ffcccc; }
+        20% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ffff00) drop-shadow(0 0 6px #ffff00); fill: #ffffcc; }
+        40% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #00ff00) drop-shadow(0 0 6px #00ff00); fill: #ccffcc; }
+        60% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #00ffff) drop-shadow(0 0 6px #00ffff); fill: #ccffff; }
+        80% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #0000ff) drop-shadow(0 0 6px #0000ff); fill: #ccccff; }
+        100% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 6px #ff0000); fill: #ffcccc; }
+    }
+    .tm-text {
+        font-family: 'Courier New', monospace;
+        font-size: 4.5px;
+        font-weight: bold;
+        animation: tm-neon 8s linear infinite;
+        text-anchor: start;
+    }
+    /* --- NEW MASK ANIMATIONS --- */
+    @keyframes mk-pulse { 0%, 100% { opacity: 0.3; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.05); } }
+    @keyframes mk-rainbow { 0% { stop-color: #ff0000; fill: #ff0000; stroke: #ff0000; } 20% { stop-color: #ffff00; fill: #ffff00; stroke: #ffff00; } 40% { stop-color: #00ff00; fill: #00ff00; stroke: #00ff00; } 60% { stop-color: #00ffff; fill: #00ffff; stroke: #00ffff; } 80% { stop-color: #0000ff; fill: #0000ff; stroke: #0000ff; } 100% { stop-color: #ff0000; fill: #ff0000; stroke: #ff0000; } }
+    @keyframes mk-scan { 0% { transform: translateY(-30px); opacity: 0; } 50% { opacity: 1; } 100% { transform: translateY(30px); opacity: 0; } }
+    @keyframes mk-glitch { 0%, 100% { transform: translate(0); } 10%, 90% { transform: translate(-2px, 1px); } 20%, 80% { transform: translate(2px, -1px); } }
+    @keyframes mk-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes mk-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .m-pulse { animation: mk-pulse 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .m-rainbow { animation: mk-rainbow 5s linear infinite; }
+    .m-scan { animation: mk-scan 2s linear infinite; }
+    .m-glitch { animation: mk-glitch 0.2s steps(2) infinite; }
+    .m-rotate { animation: mk-rotate 4s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .m-float { animation: mk-float 3s ease-in-out infinite; }
+    .m-fast-rotate { animation: mk-rotate 1s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes bgMorph{0%,100%{transform:scale(1) rotate(0deg);border-radius:50%}50%{transform:scale(1.2) rotate(180deg);border-radius:0%}}.bgMorphC{animation:bgMorph 20s ease-in-out infinite;transform-origin:center}@keyframes nwGlitch{0%,100%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(2px,-2px)}60%{transform:translate(-1px,-1px)}80%{transform:translate(1px,1px)}}.nwGlitch{animation:nwGlitch 0.6s steps(2) infinite;transform-origin:center;transform-box:fill-box;}
+        @keyframes prt-fade { 0%, 100% { opacity: 0; } 50% { opacity: 0.6; } }
+        @keyframes prt-float { 0% { transform: translateY(0) translateX(0); } 50% { transform: translateY(-20px) translateX(10px); } 100% { transform: translateY(0) translateX(0); } }
+        .prt { animation: prt-fade 4s infinite ease-in-out, prt-float 6s infinite ease-in-out; }
+        
+@keyframes gl{0%,87%,100%{opacity:0}90%{opacity:.4}93%{opacity:0}}.glr{animation:gl 10s infinite}
+    @keyframes tm-neon {
+        0% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 6px #ff0000); fill: #ffcccc; }
+        20% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ffff00) drop-shadow(0 0 6px #ffff00); fill: #ffffcc; }
+        40% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #00ff00) drop-shadow(0 0 6px #00ff00); fill: #ccffcc; }
+        60% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #00ffff) drop-shadow(0 0 6px #00ffff); fill: #ccffff; }
+        80% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #0000ff) drop-shadow(0 0 6px #0000ff); fill: #ccccff; }
+        100% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 6px #ff0000); fill: #ffcccc; }
+    }
+    .tm-text {
+        font-family: 'Courier New', monospace;
+        font-size: 4.5px;
+        font-weight: bold;
+        animation: tm-neon 8s linear infinite;
+        text-anchor: start;
+    }
+    /* --- NEW MASK ANIMATIONS --- */
+    @keyframes mk-pulse { 0%, 100% { opacity: 0.3; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.05); } }
+    @keyframes mk-rainbow { 0% { stop-color: #ff0000; fill: #ff0000; stroke: #ff0000; } 20% { stop-color: #ffff00; fill: #ffff00; stroke: #ffff00; } 40% { stop-color: #00ff00; fill: #00ff00; stroke: #00ff00; } 60% { stop-color: #00ffff; fill: #00ffff; stroke: #00ffff; } 80% { stop-color: #0000ff; fill: #0000ff; stroke: #0000ff; } 100% { stop-color: #ff0000; fill: #ff0000; stroke: #ff0000; } }
+    @keyframes mk-scan { 0% { transform: translateY(-30px); opacity: 0; } 50% { opacity: 1; } 100% { transform: translateY(30px); opacity: 0; } }
+    @keyframes mk-glitch { 0%, 100% { transform: translate(0); } 10%, 90% { transform: translate(-2px, 1px); } 20%, 80% { transform: translate(2px, -1px); } }
+    @keyframes mk-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes mk-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .m-pulse { animation: mk-pulse 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .m-rainbow { animation: mk-rainbow 5s linear infinite; }
+    .m-scan { animation: mk-scan 2s linear infinite; }
+    .m-glitch { animation: mk-glitch 0.2s steps(2) infinite; }
+    .m-rotate { animation: mk-rotate 4s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .m-float { animation: mk-float 3s ease-in-out infinite; }
+    .m-fast-rotate { animation: mk-rotate 1s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes bgM{0%{transform:translateY(-50px)}100%{transform:translateY(50px)}}.bgM{animation:bgM 4s linear infinite}@keyframes nwGlitch{0%,100%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(2px,-2px)}60%{transform:translate(-1px,-1px)}80%{transform:translate(1px,1px)}}.nwGlitch{animation:nwGlitch 0.6s steps(2) infinite;transform-origin:center;transform-box:fill-box;}
+        @keyframes prt-fade { 0%, 100% { opacity: 0; } 50% { opacity: 0.6; } }
+        @keyframes prt-float { 0% { transform: translateY(0) translateX(0); } 50% { transform: translateY(-20px) translateX(10px); } 100% { transform: translateY(0) translateX(0); } }
+        .prt { animation: prt-fade 4s infinite ease-in-out, prt-float 6s infinite ease-in-out; }
+        
+@keyframes gl{0%,87%,100%{opacity:0}90%{opacity:.4}93%{opacity:0}}.glr{animation:gl 10s infinite}
+    @keyframes tm-neon {
+        0% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 6px #ff0000); fill: #ffcccc; }
+        20% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ffff00) drop-shadow(0 0 6px #ffff00); fill: #ffffcc; }
+        40% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #00ff00) drop-shadow(0 0 6px #00ff00); fill: #ccffcc; }
+        60% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #00ffff) drop-shadow(0 0 6px #00ffff); fill: #ccffff; }
+        80% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #0000ff) drop-shadow(0 0 6px #0000ff); fill: #ccccff; }
+        100% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 6px #ff0000); fill: #ffcccc; }
+    }
+    .tm-text {
+        font-family: 'Courier New', monospace;
+        font-size: 4.5px;
+        font-weight: bold;
+        animation: tm-neon 8s linear infinite;
+        text-anchor: start;
+    }
+    /* --- NEW MASK ANIMATIONS --- */
+    @keyframes mk-pulse { 0%, 100% { opacity: 0.3; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.05); } }
+    @keyframes mk-rainbow { 0% { stop-color: #ff0000; fill: #ff0000; stroke: #ff0000; } 20% { stop-color: #ffff00; fill: #ffff00; stroke: #ffff00; } 40% { stop-color: #00ff00; fill: #00ff00; stroke: #00ff00; } 60% { stop-color: #00ffff; fill: #00ffff; stroke: #00ffff; } 80% { stop-color: #0000ff; fill: #0000ff; stroke: #0000ff; } 100% { stop-color: #ff0000; fill: #ff0000; stroke: #ff0000; } }
+    @keyframes mk-scan { 0% { transform: translateY(-30px); opacity: 0; } 50% { opacity: 1; } 100% { transform: translateY(30px); opacity: 0; } }
+    @keyframes mk-glitch { 0%, 100% { transform: translate(0); } 10%, 90% { transform: translate(-2px, 1px); } 20%, 80% { transform: translate(2px, -1px); } }
+    @keyframes mk-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes mk-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .m-pulse { animation: mk-pulse 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .m-rainbow { animation: mk-rainbow 5s linear infinite; }
+    .m-scan { animation: mk-scan 2s linear infinite; }
+    .m-glitch { animation: mk-glitch 0.2s steps(2) infinite; }
+    .m-rotate { animation: mk-rotate 4s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .m-float { animation: mk-float 3s ease-in-out infinite; }
+    .m-fast-rotate { animation: mk-rotate 1s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes bgMorph{0%,100%{transform:scale(1) rotate(0deg);border-radius:50%}50%{transform:scale(1.2) rotate(180deg);border-radius:0%}}.bgMorphC{animation:bgMorph 20s ease-in-out infinite;transform-origin:center}@keyframes nwGlitch{0%,100%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(2px,-2px)}60%{transform:translate(-1px,-1px)}80%{transform:translate(1px,1px)}}.nwGlitch{animation:nwGlitch 0.6s steps(2) infinite;transform-origin:center;transform-box:fill-box;}
+        @keyframes prt-fade { 0%, 100% { opacity: 0; } 50% { opacity: 0.6; } }
+        @keyframes prt-float { 0% { transform: translateY(0) translateX(0); } 50% { transform: translateY(-20px) translateX(10px); } 100% { transform: translateY(0) translateX(0); } }
+        .prt { animation: prt-fade 4s infinite ease-in-out, prt-float 6s infinite ease-in-out; }
+        
+@keyframes gl{0%,87%,100%{opacity:0}90%{opacity:.4}93%{opacity:0}}.glr{animation:gl 10s infinite}
+    @keyframes tm-neon {
+        0% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 6px #ff0000); fill: #ffcccc; }
+        20% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ffff00) drop-shadow(0 0 6px #ffff00); fill: #ffffcc; }
+        40% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #00ff00) drop-shadow(0 0 6px #00ff00); fill: #ccffcc; }
+        60% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #00ffff) drop-shadow(0 0 6px #00ffff); fill: #ccffff; }
+        80% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #0000ff) drop-shadow(0 0 6px #0000ff); fill: #ccccff; }
+        100% { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 6px #ff0000); fill: #ffcccc; }
+    }
+    .tm-text {
+        font-family: 'Courier New', monospace;
+        font-size: 4.5px;
+        font-weight: bold;
+        animation: tm-neon 8s linear infinite;
+        text-anchor: start;
+    }
+    /* --- NEW MASK ANIMATIONS --- */
+    @keyframes mk-pulse { 0%, 100% { opacity: 0.3; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.05); } }
+    @keyframes mk-rainbow { 0% { stop-color: #ff0000; fill: #ff0000; stroke: #ff0000; } 20% { stop-color: #ffff00; fill: #ffff00; stroke: #ffff00; } 40% { stop-color: #00ff00; fill: #00ff00; stroke: #00ff00; } 60% { stop-color: #00ffff; fill: #00ffff; stroke: #00ffff; } 80% { stop-color: #0000ff; fill: #0000ff; stroke: #0000ff; } 100% { stop-color: #ff0000; fill: #ff0000; stroke: #ff0000; } }
+    @keyframes mk-scan { 0% { transform: translateY(-30px); opacity: 0; } 50% { opacity: 1; } 100% { transform: translateY(30px); opacity: 0; } }
+    @keyframes mk-glitch { 0%, 100% { transform: translate(0); } 10%, 90% { transform: translate(-2px, 1px); } 20%, 80% { transform: translate(2px, -1px); } }
+    @keyframes mk-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes mk-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .m-pulse { animation: mk-pulse 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .m-rainbow { animation: mk-rainbow 5s linear infinite; }
+    .m-scan { animation: mk-scan 2s linear infinite; }
+    .m-glitch { animation: mk-glitch 0.2s steps(2) infinite; }
+    .m-rotate { animation: mk-rotate 4s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .m-float { animation: mk-float 3s ease-in-out infinite; }
+    .m-fast-rotate { animation: mk-rotate 1s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes bgMorph{0%,100%{transform:scale(1) rotate(0deg);border-radius:50%}50%{transform:scale(1.2) rotate(180deg);border-radius:0%}}.bgMorphC{animation:bgMorph 20s ease-in-out infinite;transform-origin:center}@keyframes nwGlitch{0%,100%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(2px,-2px)}60%{transform:translate(-1px,-1px)}80%{transform:translate(1px,1px)}}.nwGlitch{animation:nwGlitch 0.6s steps(2) infinite;transform-origin:center;transform-box:fill-box;}
+        @keyframes prt-fade { 0%, 100% { opacity: 0; } 50% { opacity: 0.6; } }
+        @keyframes prt-float { 0% { transform: translateY(0) translateX(0); } 50% { transform: translateY(-20px) translateX(10px); } 100% { transform: translateY(0) translateX(0); } }
+        .prt { animation: prt-fade 4s infinite ease-in-out, prt-float 6s infinite ease-in-out; }
+        
+</style>
+
+<!-- BACKGROUNDS -->
+<g id="bg0_2128"><rect width="512" height="512" fill="#1e1b4b"/><ellipse cx="194.88217195030302" cy="371.98138318490237" rx="333.45133513212204" ry="381.916280137375" fill="#6366f1" opacity="0.29100105105899277" class="bgMorphC" style="animation-duration:16.595683788182214s;animation-delay:-1.558299153111875s"/><ellipse cx="106.99718364048749" cy="140.26926276274025" rx="299.45741556584835" ry="244.17432504706085" fill="#6366f1" opacity="0.14308800115250053" class="bgMorphC" style="animation-duration:17.568797960411757s;animation-delay:-6.768870542291552s"/><ellipse cx="253.51500432007015" cy="245.1879461063072" rx="264.5540118217468" ry="309.8828570917249" fill="#6366f1" opacity="0.12306846166029572" class="bgMorphC" style="animation-duration:19.99753343174234s;animation-delay:-6.574756414629519s"/></g>
+<g id="bg1_2128" style="display:none"><rect width="512" height="512" fill="#365314"/><text x="0" y="0" fill="#84cc16" font-family="monospace" font-size="12.795633987989277" opacity="0.45642591202631594" class="bgM" style="animation-duration:3.434773596934974s">010101</text><text x="25.06752078421414" y="0" fill="#84cc16" font-family="monospace" font-size="12.829671171493828" opacity="0.2597877214662731" class="bgM" style="animation-duration:5.2079541608691216s">101010</text><text x="57.28597680106759" y="0" fill="#84cc16" font-family="monospace" font-size="18.59252701047808" opacity="0.5333015280775726" class="bgM" style="animation-duration:5.877418192103505s">101010</text><text x="95.42496991343796" y="0" fill="#84cc16" font-family="monospace" font-size="14.048634150531143" opacity="0.30878937114030125" class="bgM" style="animation-duration:5.6282554138451815s">101010</text><text x="132.05855562351644" y="0" fill="#84cc16" font-family="monospace" font-size="18.712190764490515" opacity="0.3797581393271685" class="bgM" style="animation-duration:3.9027289422228932s">101010</text><text x="152.59717965964228" y="0" fill="#84cc16" font-family="monospace" font-size="17.040548080112785" opacity="0.4630914203822613" class="bgM" style="animation-duration:3.5377229200676084s">101010</text><text x="191.95637510623783" y="0" fill="#84cc16" font-family="monospace" font-size="18.768689988646656" opacity="0.4771041084080935" class="bgM" style="animation-duration:4.847334133461118s">010101</text><text x="227.25598881021142" y="0" fill="#84cc16" font-family="monospace" font-size="18.602187987416983" opacity="0.5658832370303571" class="bgM" style="animation-duration:5.716742310672998s">010101</text><text x="259.4585044775158" y="0" fill="#84cc16" font-family="monospace" font-size="12.555372510105371" opacity="0.238656113576144" class="bgM" style="animation-duration:4.012125416658819s">101010</text><text x="284.2146839387715" y="0" fill="#84cc16" font-family="monospace" font-size="15.577197894454002" opacity="0.46759208710864186" class="bgM" style="animation-duration:2.8938145069405437s">101010</text><text x="313.3756670029834" y="0" fill="#84cc16" font-family="monospace" font-size="18.770305886864662" opacity="0.5245213869959116" class="bgM" style="animation-duration:4.691477426327765s">101010</text><text x="353.0264222295955" y="0" fill="#84cc16" font-family="monospace" font-size="16.905108406208456" opacity="0.3438853959552944" class="bgM" style="animation-duration:2.1471044663339853s">101010</text><text x="379.14624087512493" y="0" fill="#84cc16" font-family="monospace" font-size="13.78836679039523" opacity="0.3076835702173412" class="bgM" style="animation-duration:5.510110962204635s">010101</text><text x="418.453301936388" y="0" fill="#84cc16" font-family="monospace" font-size="15.859298163559288" opacity="0.47859341362491253" class="bgM" style="animation-duration:4.550742360763252s">101010</text><text x="457.08756558131427" y="0" fill="#84cc16" font-family="monospace" font-size="16.216089569497854" opacity="0.3876623630523682" class="bgM" style="animation-duration:3.8049842584878206s">010101</text><text x="483.7905813800171" y="0" fill="#84cc16" font-family="monospace" font-size="18.902587895281613" opacity="0.49587716693058614" class="bgM" style="animation-duration:4.325709790922701s">010101</text></g>
+
+<!-- COMMON STATIC BOTTOM LAYERS -->
+<rect x="208" y="432" width="1.5" height="1.5" fill="#cbd5e1" class="prt" style="animation-duration: 6s, 5s; animation-delay: -0.8s, -0.8s; filter: blur(0.5px);"/><circle cx="195" cy="169" r="0.75" fill="#cbd5e1" class="prt" style="animation-duration: 7s, 6s; animation-delay: -0.9s, -0.9s; filter: blur(0.5px);"/><rect x="182" y="418" width="1.5" height="1.5" fill="#cbd5e1" class="prt" style="animation-duration: 3s, 7s; animation-delay: -1s, -1s; filter: blur(0.5px);"/><circle cx="169" cy="155" r="0.75" fill="#cbd5e1" class="prt" style="animation-duration: 4s, 8s; animation-delay: -1.1s, -1.1s; filter: blur(0.5px);"/><rect x="156" y="404" width="1.5" height="1.5" fill="#cbd5e1" class="prt" style="animation-duration: 5s, 9s; animation-delay: -1.2s, -1.2s; filter: blur(0.5px);"/><circle cx="143" cy="141" r="0.75" fill="#cbd5e1" class="prt" style="animation-duration: 6s, 10s; animation-delay: -1.3s, -1.3s; filter: blur(0.5px);"/><rect x="130" y="390" width="1.5" height="1.5" fill="#cbd5e1" class="prt" style="animation-duration: 7s, 11s; animation-delay: -1.4s, -1.4s; filter: blur(0.5px);"/><circle cx="117" cy="127" r="0.75" fill="#cbd5e1" class="prt" style="animation-duration: 3s, 5s; animation-delay: -1.5s, -1.5s; filter: blur(0.5px);"/><rect x="104" y="376" width="1.5" height="1.5" fill="#cbd5e1" class="prt" style="animation-duration: 4s, 6s; animation-delay: -1.6s, -1.6s; filter: blur(0.5px);"/><circle cx="91" cy="113" r="0.75" fill="#cbd5e1" class="prt" style="animation-duration: 5s, 7s; animation-delay: -1.7s, -1.7s; filter: blur(0.5px);"/><rect x="78" y="362" width="1.5" height="1.5" fill="#cbd5e1" class="prt" style="animation-duration: 6s, 8s; animation-delay: -1.8s, -1.8s; filter: blur(0.5px);"/><circle cx="65" cy="99" r="0.75" fill="#cbd5e1" class="prt" style="animation-duration: 7s, 9s; animation-delay: -1.9s, -1.9s; filter: blur(0.5px);"/>
+
+<g style="filter:drop-shadow(0px 18px 30px rgba(0,0,0,0.65))">
+  <path d="M200,512 L200,300 Q200,120 310,120 Q350,120 370,160 L410,240 L380,260 L390,280 L380,330 Q340,360 280,380 L280,512 Z" fill="#64748b"/>
+  <path d="M200,512 L200,300 Q200,120 310,120 Q350,120 370,160 L410,240 L380,260 L390,280 L380,330 Q340,360 280,380 L280,512 Z" fill="#94a3b8" opacity="0.2"/>
+  <path d="M200,512 L200,300 Q200,120 310,120 Q350,120 370,160 L410,240 L380,260 L390,280 L380,330 Q340,360 280,380 L280,512 Z" fill="#334155" opacity="0.15"/>
+  <path d="M200,512 L200,300 Q200,120 310,120 Q350,120 370,160 L410,240 L380,260 L390,280 L380,330 Q340,360 280,380 L280,512 Z" fill="none" stroke="#94a3b8" stroke-width="7" stroke-linejoin="round" opacity="0.4"/>
+</g>
+
+  <path d="M210,512 Q200,130 320,105" fill="none" stroke="white" stroke-opacity="0.1" stroke-width="8" stroke-linecap="round"/>
+
+
+
+<ellipse cx="260" cy="260" rx="15" ry="25" fill="#64748b" stroke="#334155" stroke-width="1"/>
+<ellipse cx="260" cy="260" rx="5" ry="12" fill="#334155"/>
+
+<g class=""><ellipse cx="330" cy="220" rx="26" ry="16" fill="white"/>
+<g class="">
+  <circle cx="338" cy="220" r="12" fill="#e0f2fe"/>
+  <circle cx="338" cy="220" r="8" fill="#7dd3fc"/>
+  <circle cx="338" cy="220" r="5" fill="#020617"/>
+  <circle cx="334" cy="216" r="3" fill="white"/>
+</g></g>
+
+
+<!-- CLOTHING -->
+<g id="cloth0_2128"><path d="M100,440 Q256,540 412,440 L512,512 L0,512 Z" fill="#334155"/><path d="M120,450 Q256,520 392,450 L392,512 L120,512 Z" fill="#283444"/></g>
+<g id="cloth1_2128" style="display:none"><rect x="0" y="495" width="512" height="17" fill="#451a03"/></g>
+
+<!-- COMMON STATIC MIDDLE LAYERS -->
+<g class="nwGlitch" style="filter:drop-shadow(0 3px 8px rgba(0,0,0,0.8))"><path d="M180,415 L350,425 L340,475 L170,465 Z" fill="#cbd5e1"/></g>
+
+
+<!-- WATCH + HAND -->
+<g id="watch0_2128"></g>
+<g id="watch1_2128" style="display:none"><path d="m 144.02119,313.7196 c 2.588,-1.782 16.34,-10.254 59.473,-36.631 19.525,-11.94 43.825,-26.888 54,-33.217 24.315,-15.124 23.599,-14.792 31.95,-14.792 h 7.05 l 0.005,-6.75 c 0.006,-8.154 0.516,-8.863 13.995,-19.473 16.069,-12.647 22.958,-21.032 29.83,-36.309 2.32,-5.154 5.148,-9.81 6.651,-10.95 2.609,-1.975 2.628,-1.975 6.302,0 9.09,4.888 11.368,18.47 5.759,34.324 -3.753,10.606 -8.187,15.834 -16.17,19.068 -3.23,1.308 -6.188,2.65 -6.573,2.984 -0.386,0.333 13.494,0.47 30.844,0.303 35.22,-0.339 35.162,-0.348 37.384,6.384 1.336,4.05 0.846,12.946 -0.805,14.597 -1.837,1.837 -9.273,2.733 -23.045,2.778 -12.137,0.04 -13.294,0.2 -12.989,1.794 0.3,1.564 2.195,1.803 17.824,2.25 9.618,0.275 18.038,0.856 18.71,1.292 2.097,1.358 3.58,8.208 2.842,13.127 -1.121,7.48 -2.654,8.017 -24.019,8.427 -9.925,0.191 -18.27,0.567 -18.545,0.837 -0.275,0.269 0.562,1.35 1.86,2.403 2.083,1.688 4.067,1.914 16.796,1.914 13.993,0 14.51,0.075 16.89,2.455 2.663,2.663 2.99,5.075 1.443,10.645 -1.917,6.9 -3.086,7.298 -21.004,7.146 -15.975,-0.136 -18.385,0.363 -15.949,3.298 0.864,1.04 3.384,1.458 8.836,1.462 10.411,0.008 14.93,1.357 15.772,4.71 0.523,2.084 0.1,3.108 -2.048,4.955 -3.297,2.836 -7.713,2.955 -31.096,0.837 -8.8,-0.797 -25.064,-1.463 -36.143,-1.479 -22.676,-0.033 -21.357,0.468 -21.357,-8.11 v -4.919 h -5.441 c -2.993,0 -5.713,0.44 -6.046,0.98 -0.79,1.276 -28.353,22.364 -31.197,23.866 -1.575,0.832 -17.748,1.154 -57.973,1.154 -47.325,0 -55.489,-0.206 -53.816,-1.36" transform="translate(101, 229) scale(0.9, 0.9)" fill="#64748b" stroke="#334155" stroke-width="1"/>
+<g transform="translate(350, 467) scale(0.2625, 0.2625) translate(-256, -256)">
+    <path d="M 427.22005933962384 346.94262944195435 L 312.7647150568698 441.3770150115524 L 165.05737055804568 427.22005933962384 L 70.62298498844763 312.7647150568698 L 84.77994066037613 165.05737055804568 L 199.23528494313007 70.62298498844768 L 346.9426294419544 84.77994066037618 L 441.3770150115523 199.23528494313007 Z" fill="#94a3b8" stroke="#334155" stroke-width="2" />
+    <rect x="396" y="241" width="60" height="30" fill="#94a3b8" stroke="#334155" stroke-width="1" />
+    <circle cx="256" cy="256" r="173.62627621274441" fill="#94a3b8" stroke="#334155" stroke-width="2" /><line x1="408.58281361777335" y1="256" x2="424.6262762127444" y2="256" stroke="#334155" stroke-width="1.2368284659460187" /><line x1="408.1004747803369" y1="268.1227300189461" x2="424.0932214072835" y2="269.397385800921" stroke="#334155" stroke-width="2.6031123036518693" /><line x1="406.65650776945677" y1="280.16881623554957" x2="422.4974271350091" y2="282.7100690152441" stroke="#334155" stroke-width="1.7310714502818882" /><line x1="404.26004180949076" y1="292.0620994142635" x2="419.8489825211093" y2="295.8538825733956" stroke="#334155" stroke-width="2.5006408556364477" /><line x1="400.9262281298292" y1="303.7273863895444" x2="416.16463188515434" y2="308.74572705413937" stroke="#334155" stroke-width="2.510207707993686" /><line x1="396.6761441739451" y1="315.0909254612549" x2="411.4676688781176" y2="321.30409606587295" stroke="#334155" stroke-width="1.4289907007478178" /><line x1="391.53666034100956" y1="326.08087267665815" x2="405.7877892124134" y2="333.4495915562786" stroke="#334155" stroke-width="2.0357063561677933" /><line x1="385.5402701025772" y1="336.6277460510184" x2="399.16090291604274" y2="345.10542579237335" stroke="#334155" stroke-width="2.273838358465582" /><line x1="378.72488456839676" y1="346.66486485507966" x2="391.62890729783385" y2="356.1979068372806" stroke="#334155" stroke-width="2.9365232889540493" /><line x1="371.13359280016914" y1="356.1287711921054" x2="383.23942205916626" y2="366.6569044543815" stroke="#334155" stroke-width="1.8109509572386742" /><line x1="362.814389388626" y1="364.95963119913324" x2="374.04548822688656" y2="376.41629349325103" stroke="#334155" stroke-width="1.6847372618503869" /><line x1="353.8198710162741" y1="373.10161333592146" x2="364.1052328108588" y2="385.41437195414886" stroke="#334155" stroke-width="1.1945911087095737" /><line x1="344.20690392423387" y1="380.5032413699223" x2="353.4815013062932" y2="393.59425108792857" stroke="#334155" stroke-width="1.7624894171021879" /><line x1="334.0362643855541" y1="387.1177198255982" x2="342.2414603642909" y2="400.90421506502565" stroke="#334155" stroke-width="1.2801685146987438" /><line x1="323.37225445804535" y1="392.9032298404846" x2="330.4561731426502" y2="407.2980479395834" stroke="#334155" stroke-width="1.7615514090284705" /><line x1="312.2822954459671" y1="397.82319355750326" x2="318.2001500217023" y2="412.7353258415425" stroke="#334155" stroke-width="1.5972303901799023" /><line x1="300.83650164083457" y1="401.8465053819515" x2="305.550877525697" y2="417.18167254936327" stroke="#334155" stroke-width="2.6461579892784357" /><line x1="289.10723703629293" y1="404.94772864108694" x2="292.58832842804804" y2="420.6089768275657" stroke="#334155" stroke-width="2.93630608310923" /><line x1="277.16865781965066" y1="407.10725640296266" x2="279.3944561377107" y2="422.99557015501193" stroke="#334155" stroke-width="2.8114327252842486" /><line x1="265.09624353258687" y1="408.31143543776363" x2="266.05267656334337" y2="424.3263637202728" stroke="#334155" stroke-width="1.4670463874936104" /><line x1="252.96631986518702" y1="408.5526525379215" x2="252.64734073107627" y2="424.59294381795246" stroke="#334155" stroke-width="1.7692058188840747" /><line x1="240.85557610035528" y1="407.82938265126427" x2="239.26320149016502" y2="423.79362504284234" stroke="#334155" stroke-width="1.395257637836039" /><line x1="228.84058025947655" y1="406.1461985228871" x2="225.9848776781902" y2="421.9334609455958" stroke="#334155" stroke-width="1.406163977459073" /><line x1="216.99729501473217" y1="403.51374178478534" x2="212.89631913352096" y2="419.02421208255384" stroke="#334155" stroke-width="2.3464353531599045" /><line x1="205.4005974286294" y1="399.948655676031" x2="200.080275937408" y2="415.08427166172135" stroke="#334155" stroke-width="1.0905149774625897" /><line x1="194.1238055571032" y1="395.47347981885656" x2="187.61777524132629" y2="410.13854925498356" stroke="#334155" stroke-width="1.1113025597296655" /><line x1="183.23821490916094" y1="390.11650771590615" x2="175.5876089872354" y2="404.2183133117734" stroke="#334155" stroke-width="1.8948409031145275" /><line x1="172.81264769371933" y1="383.9116078696023" x2="164.0658357595538" y2="397.3609934698658" stroke="#334155" stroke-width="2.9207427403889596" /><line x1="162.9130177034403" y1="376.8980096545685" x2="153.12529991829894" y2="389.6099439131565" stroke="#334155" stroke-width="1.716835041064769" /><line x1="153.60191358651247" y1="369.1200552968929" x2="142.8351710535904" y2="381.0141692725533" stroke="#334155" stroke-width="2.2284340653568506" /><line x1="144.93820314106495" y1="360.6269195282973" x2="133.26050667322994" y2="371.6280148029211" stroke="#334155" stroke-width="2.2601037016138434" /><line x1="136.9766611339938" y1="351.4722986876509" x2="124.46184088819055" y2="361.5108227948824" stroke="#334155" stroke-width="2.091894956305623" /><line x1="129.76762299725038" y1="341.714071235427" x2="116.49480169647714" y2="350.7265573937506" stroke="#334155" stroke-width="2.5897446726448834" /><line x1="123.35666659103362" y1="331.41393182744116" x2="109.40975928501217" y2="339.34340019760833" stroke="#334155" stroke-width="2.3647791794501245" /><line x1="117.78432404588301" y1="320.63700126137263" x2="103.25150757309635" y2="327.43331919129145" stroke="#334155" stroke-width="2.7002343530766666" /><line x1="113.08582550549966" y1="309.45141476211523" x2="98.05898101082843" y2="315.071613741618" stroke="#334155" stroke-width="2.314439092297107" /><line x1="109.29087639043422" y1="297.92789120894713" x2="93.86500842297602" y2="302.33643853054673" stroke="#334155" stroke-width="2.131764145102352" /><line x1="106.42346959085418" y1="286.1392860280074" x2="90.69610545457539" y2="289.3083094361139" stroke="#334155" stroke-width="2.350972034037113" /><line x1="104.50173377576732" y1="274.16013057683443" x2="88.57230693048643" y2="276.0695944851294" stroke="#334155" stroke-width="2.507029823027551" /><line x1="103.53781877773895" y1="262.0661609331264" x2="87.50704018877914" y2="262.70399309599037" stroke="#334155" stroke-width="2.4442678233608603" /><line x1="103.53781877773895" y1="249.9338390668736" x2="87.50704018877914" y2="249.2960069040097" stroke="#334155" stroke-width="1.654904082417488" /><line x1="104.50173377576729" y1="237.83986942316565" x2="88.57230693048643" y2="235.9304055148707" stroke="#334155" stroke-width="2.197052115574479" /><line x1="106.42346959085421" y1="225.86071397199254" x2="90.69610545457542" y2="222.69169056388608" stroke="#334155" stroke-width="2.835672540590167" /><line x1="109.29087639043422" y1="214.07210879105287" x2="93.86500842297602" y2="209.66356146945333" stroke="#334155" stroke-width="1.104091210756451" /><line x1="113.08582550549963" y1="202.54858523788488" x2="98.05898101082838" y2="196.92838625838206" stroke="#334155" stroke-width="1.415913749486208" /><line x1="117.78432404588304" y1="191.3629987386273" x2="103.25150757309635" y2="184.56668080870853" stroke="#334155" stroke-width="2.6957134366966784" /><line x1="123.35666659103359" y1="180.5860681725589" x2="109.40975928501217" y2="172.6565998023917" stroke="#334155" stroke-width="2.637970667798072" /><line x1="129.76762299725038" y1="170.285928764573" x2="116.49480169647714" y2="161.27344260624935" stroke="#334155" stroke-width="2.6844110782258213" /><line x1="136.9766611339938" y1="160.52770131234917" x2="124.4618408881905" y2="150.48917720511764" stroke="#334155" stroke-width="1.6753556756302714" /><line x1="144.93820314106486" y1="151.37308047170276" x2="133.26050667322983" y2="140.37198519707903" stroke="#334155" stroke-width="2.3981174216605723" /><line x1="153.60191358651247" y1="142.87994470310713" x2="142.8351710535904" y2="130.98583072744663" stroke="#334155" stroke-width="1.9568295581266284" /><line x1="162.9130177034402" y1="135.10199034543155" x2="153.12529991829885" y2="122.39005608684354" stroke="#334155" stroke-width="2.7893353826366365" /><line x1="172.81264769371933" y1="128.08839213039772" x2="164.0658357595538" y2="114.6390065301342" stroke="#334155" stroke-width="1.9750356781296432" /><line x1="183.238214909161" y1="121.88349228409382" x2="175.58760898723546" y2="107.78168668822656" stroke="#334155" stroke-width="1.6569917472079396" /><line x1="194.1238055571031" y1="116.52652018114347" x2="187.6177752413262" y2="101.86145074501644" stroke="#334155" stroke-width="2.210337432101369" /><line x1="205.40059742862945" y1="112.05134432396898" x2="200.08027593740806" y2="96.91572833827868" stroke="#334155" stroke-width="1.9385092002339661" /><line x1="216.99729501473215" y1="108.48625821521466" x2="212.89631913352093" y2="92.97578791744616" stroke="#334155" stroke-width="1.5255348114296794" /><line x1="228.84058025947635" y1="105.85380147711291" x2="225.98487767819" y2="90.06653905440422" stroke="#334155" stroke-width="1.996006965637207" /><line x1="240.85557610035534" y1="104.1706173487357" x2="239.26320149016507" y2="88.20637495715766" stroke="#334155" stroke-width="1.0238008596934378" /><line x1="252.96631986518696" y1="103.44734746207851" x2="252.6473407310762" y2="87.40705618204754" stroke="#334155" stroke-width="1.106766392942518" /><line x1="265.0962435325867" y1="103.68856456223637" x2="266.05267656334325" y2="87.67363627972716" stroke="#334155" stroke-width="2.6557134641334414" /><line x1="277.16865781965066" y1="104.89274359703731" x2="279.3944561377107" y2="89.0044298449881" stroke="#334155" stroke-width="2.6452163006179035" /><line x1="289.1072370362929" y1="107.05227135891303" x2="292.588328428048" y2="91.39102317243427" stroke="#334155" stroke-width="1.46984540252015" /><line x1="300.8365016408345" y1="110.15349461804851" x2="305.55087752569693" y2="94.81832745063676" stroke="#334155" stroke-width="2.3654130487702787" /><line x1="312.2822954459671" y1="114.17680644249674" x2="318.20015002170226" y2="99.2646741584575" stroke="#334155" stroke-width="2.596658165566623" /><line x1="323.3722544580453" y1="119.09677015951539" x2="330.45617314265013" y2="104.7019520604166" stroke="#334155" stroke-width="2.9630826259963214" /><line x1="334.0362643855541" y1="124.88228017440181" x2="342.2414603642909" y2="111.09578493497435" stroke="#334155" stroke-width="1.7445734203793108" /><line x1="344.20690392423387" y1="131.49675863007766" x2="353.48150130629324" y2="118.40574891207143" stroke="#334155" stroke-width="1.5820921189151704" /><line x1="353.8198710162741" y1="138.89838666407854" x2="364.1052328108588" y2="126.58562804585117" stroke="#334155" stroke-width="1.8882685350254178" /><line x1="362.814389388626" y1="147.0403688008667" x2="374.0454882268865" y2="135.58370650674897" stroke="#334155" stroke-width="1.234173929784447" /><line x1="371.13359280016914" y1="155.87122880789462" x2="383.23942205916626" y2="145.3430955456185" stroke="#334155" stroke-width="2.40451085427776" /><line x1="378.72488456839676" y1="165.3351351449204" x2="391.6289072978339" y2="155.80209316271944" stroke="#334155" stroke-width="1.4657109547406435" /><line x1="385.5402701025771" y1="175.37225394898155" x2="399.1609029160427" y2="166.8945742076266" stroke="#334155" stroke-width="1.5626892573200166" /><line x1="391.53666034100956" y1="185.9191273233418" x2="405.7877892124134" y2="178.55040844372135" stroke="#334155" stroke-width="2.853497873991728" /><line x1="396.6761441739451" y1="196.9090745387451" x2="411.4676688781176" y2="190.69590393412705" stroke="#334155" stroke-width="2.7488051052205265" /><line x1="400.92622812982916" y1="208.27261361045555" x2="416.16463188515434" y2="203.25427294586058" stroke="#334155" stroke-width="1.4994519669562578" /><line x1="404.2600418094907" y1="219.93790058573646" x2="419.84898252110924" y2="216.14611742660435" stroke="#334155" stroke-width="2.661438046954572" /><line x1="406.65650776945677" y1="231.83118376445043" x2="422.49742713500916" y2="229.28993098475596" stroke="#334155" stroke-width="1.6577362422831357" /><line x1="408.1004747803369" y1="243.87726998105387" x2="424.0932214072835" y2="242.60261419907894" stroke="#334155" stroke-width="1.381083371117711" />
+    <g transform="translate(256,256)">
+        <circle class="watch-face" r="152.58281361777335" fill="#831843" stroke="#334155" stroke-width="4" />
+    </g>
+    <g clip-path="url(#cp_2128_watchAlt)">
+        <line x1="256" y1="256" x2="456" y2="256" stroke="white" stroke-opacity="0.05332922246307135" stroke-width="1.9033376132138073" /><line x1="256" y1="256" x2="455.1948587990478" y2="273.9278617806867" stroke="black" stroke-opacity="0.13423790982924402" stroke-width="1.2108487021178007" /><line x1="256" y1="256" x2="452.78591771972594" y2="291.7113789597273" stroke="white" stroke-opacity="0.1425160307902843" stroke-width="1.89318638574332" /><line x1="256" y1="256" x2="448.79257213917066" y2="309.20736911333506" stroke="black" stroke-opacity="0.1301162320189178" stroke-width="1.8168240990489721" /><line x1="256" y1="256" x2="443.24697412794745" y2="326.27496481626855" stroke="white" stroke-opacity="0.12314147376455367" stroke-width="1.4817844782955945" /><line x1="256" y1="256" x2="436.1937735804838" y2="342.77674782351164" stroke="black" stroke-opacity="0.12424528729170561" stroke-width="1.3289469187147915" /><line x1="256" y1="256" x2="427.6897587203732" y2="358.57985548118126" stroke="white" stroke-opacity="0.1491606433875859" stroke-width="2.2370545812882483" /><line x1="256" y1="256" x2="417.8033988749895" y2="373.55705045849464" stroke="black" stroke-opacity="0.06637561700772494" stroke-width="2.809011876117438" /><line x1="256" y1="256" x2="406.61429320072216" y2="387.5877451879425" stroke="white" stroke-opacity="0.1205775941722095" stroke-width="1.476957178208977" /><line x1="256" y1="256" x2="394.2125297973729" y2="400.5589727654783" stroke="black" stroke-opacity="0.1473726633703336" stroke-width="2.99312858376652" /><line x1="256" y1="256" x2="380.6979603717467" y2="412.366296493606" stroke="white" stroke-opacity="0.08817381579428912" stroke-width="1.2995234006084502" /><line x1="256" y1="256" x2="366.17939629042047" y2="422.91465074426054" stroke="black" stroke-opacity="0.08054266429971904" stroke-width="2.4809846193529665" /><line x1="256" y1="256" x2="350.7737324945997" y2="432.1191063713476" stroke="white" stroke-opacity="0.08231128577608615" stroke-width="2.4665243914350867" /><line x1="256" y1="256" x2="334.6050063307847" y2="439.90555451029013" stroke="black" stroke-opacity="0.07239724476821721" stroke-width="2.17771006654948" /><line x1="256" y1="256" x2="317.8033988749895" y2="446.21130325903073" stroke="white" stroke-opacity="0.06458404380828142" stroke-width="1.679715151898563" /><line x1="256" y1="256" x2="300.50418679126284" y2="450.9855824363647" stroke="black" stroke-opacity="0.13378134034574032" stroke-width="2.7182285776361823" /><line x1="256" y1="256" x2="282.84665316353113" y2="454.18995235358693" stroke="white" stroke-opacity="0.1005404822062701" stroke-width="1.1090585449710488" /><line x1="256" y1="256" x2="264.972966070103" y2="455.79861330826293" stroke="black" stroke-opacity="0.06961159126367421" stroke-width="2.844687699805945" /><line x1="256" y1="256" x2="247.027033929897" y2="455.79861330826293" stroke="white" stroke-opacity="0.08504887635353953" stroke-width="1.7022371930070221" /><line x1="256" y1="256" x2="229.15334683646893" y2="454.18995235358693" stroke="black" stroke-opacity="0.08544876403175294" stroke-width="1.0503452653065324" /><line x1="256" y1="256" x2="211.49581320873713" y2="450.9855824363647" stroke="white" stroke-opacity="0.06701213198248297" stroke-width="2.812586296349764" /><line x1="256" y1="256" x2="194.1966011250105" y2="446.21130325903073" stroke="black" stroke-opacity="0.0752148338360712" stroke-width="1.637006416451186" /><line x1="256" y1="256" x2="177.39499366921524" y2="439.90555451029013" stroke="white" stroke-opacity="0.1279271333711222" stroke-width="1.8781553353182971" /><line x1="256" y1="256" x2="161.2262675054003" y2="432.1191063713476" stroke="black" stroke-opacity="0.10393163799308242" stroke-width="2.183192643802613" /><line x1="256" y1="256" x2="145.82060370957942" y2="422.9146507442605" stroke="white" stroke-opacity="0.0606471999315545" stroke-width="1.3696198295801878" /><line x1="256" y1="256" x2="131.30203962825323" y2="412.3662964936059" stroke="black" stroke-opacity="0.05433157617226243" stroke-width="2.139692083001137" /><line x1="256" y1="256" x2="117.78747020262708" y2="400.5589727654783" stroke="white" stroke-opacity="0.1327088402118534" stroke-width="1.6837962134741247" /><line x1="256" y1="256" x2="105.38570679927784" y2="387.5877451879426" stroke="black" stroke-opacity="0.0883194822119549" stroke-width="2.4422312169335783" /><line x1="256" y1="256" x2="94.19660112501055" y2="373.55705045849464" stroke="white" stroke-opacity="0.056201756768859926" stroke-width="2.3776692212559283" /><line x1="256" y1="256" x2="84.31024127962672" y2="358.57985548118114" stroke="black" stroke-opacity="0.052331816684454684" stroke-width="2.7903043553233147" /><line x1="256" y1="256" x2="75.80622641951615" y2="342.7767478235115" stroke="white" stroke-opacity="0.062262902152724564" stroke-width="1.8719061678275466" /><line x1="256" y1="256" x2="68.75302587205255" y2="326.2749648162685" stroke="black" stroke-opacity="0.12240820608567447" stroke-width="1.5762542658485472" /><line x1="256" y1="256" x2="63.20742786082934" y2="309.20736911333506" stroke="white" stroke-opacity="0.13752655379939827" stroke-width="2.623046379070729" /><line x1="256" y1="256" x2="59.214082280274056" y2="291.71137895972726" stroke="black" stroke-opacity="0.11595332762226462" stroke-width="1.8695228593423963" /><line x1="256" y1="256" x2="56.80514120095219" y2="273.9278617806867" stroke="white" stroke-opacity="0.057733272784389555" stroke-width="2.1914788433350623" /><line x1="256" y1="256" x2="56" y2="256" stroke="black" stroke-opacity="0.06699885046109558" stroke-width="2.675080136395991" /><line x1="256" y1="256" x2="56.80514120095222" y2="238.07213821931325" stroke="white" stroke-opacity="0.06724437212105841" stroke-width="2.160022399853915" /><line x1="256" y1="256" x2="59.214082280274084" y2="220.2886210402726" stroke="black" stroke-opacity="0.08491070657037199" stroke-width="2.1879565906710923" /><line x1="256" y1="256" x2="63.20742786082934" y2="202.792630886665" stroke="white" stroke-opacity="0.09310683209914715" stroke-width="2.71259987866506" /><line x1="256" y1="256" x2="68.75302587205258" y2="185.7250351837314" stroke="black" stroke-opacity="0.06410129668656737" stroke-width="1.8709972254000604" /><line x1="256" y1="256" x2="75.80622641951618" y2="169.22325217648842" stroke="white" stroke-opacity="0.05164333458524198" stroke-width="1.3154066558927298" /><line x1="256" y1="256" x2="84.31024127962681" y2="153.42014451881874" stroke="black" stroke-opacity="0.0602492134552449" stroke-width="2.6345981871709228" /><line x1="256" y1="256" x2="94.19660112501055" y2="138.44294954150533" stroke="white" stroke-opacity="0.0893438869388774" stroke-width="1.2348209624178708" /><line x1="256" y1="256" x2="105.38570679927793" y2="124.41225481205737" stroke="black" stroke-opacity="0.10394650900270791" stroke-width="1.278985407203436" /><line x1="256" y1="256" x2="117.7874702026271" y2="111.44102723452164" stroke="white" stroke-opacity="0.1096518678823486" stroke-width="2.642890455201268" /><line x1="256" y1="256" x2="131.3020396282534" y2="99.63370350639394" stroke="black" stroke-opacity="0.1472531406208873" stroke-width="2.0270018205046654" /><line x1="256" y1="256" x2="145.82060370957947" y2="89.08534925573949" stroke="white" stroke-opacity="0.14190999264828863" stroke-width="2.130512739531696" /><line x1="256" y1="256" x2="161.22626750540024" y2="79.88089362865242" stroke="black" stroke-opacity="0.09832670383621007" stroke-width="2.325295840855688" /><line x1="256" y1="256" x2="177.3949936692154" y2="72.09444548970981" stroke="white" stroke-opacity="0.08332128650508822" stroke-width="2.3393226275220513" /><line x1="256" y1="256" x2="194.1966011250105" y2="65.7886967409693" stroke="black" stroke-opacity="0.11323566203936936" stroke-width="2.5762298381887376" /><line x1="256" y1="256" x2="211.49581320873727" y2="61.01441756363525" stroke="white" stroke-opacity="0.0529086388181895" stroke-width="2.709388536401093" /><line x1="256" y1="256" x2="229.15334683646887" y2="57.81004764641307" stroke="black" stroke-opacity="0.13753874266985805" stroke-width="2.333443386014551" /><line x1="256" y1="256" x2="247.027033929897" y2="56.20138669173707" stroke="white" stroke-opacity="0.1286910920869559" stroke-width="2.1586132934316993" /><line x1="256" y1="256" x2="264.9729660701031" y2="56.20138669173707" stroke="black" stroke-opacity="0.060788176488131285" stroke-width="2.5736173284240067" /><line x1="256" y1="256" x2="282.8466531635311" y2="57.81004764641304" stroke="white" stroke-opacity="0.14945607807021588" stroke-width="1.5583199276588857" /><line x1="256" y1="256" x2="300.50418679126284" y2="61.01441756363528" stroke="black" stroke-opacity="0.08346513416618109" stroke-width="2.2193895713426173" /><line x1="256" y1="256" x2="317.80339887498945" y2="65.78869674096927" stroke="white" stroke-opacity="0.07814867906272412" stroke-width="2.7671697293408215" /><line x1="256" y1="256" x2="334.6050063307847" y2="72.09444548970987" stroke="black" stroke-opacity="0.08730903735850007" stroke-width="1.8721916396170855" /><line x1="256" y1="256" x2="350.77373249459987" y2="79.88089362865247" stroke="white" stroke-opacity="0.11683861964847893" stroke-width="2.440398816950619" /><line x1="256" y1="256" x2="366.17939629042047" y2="89.08534925573946" stroke="black" stroke-opacity="0.08837742435280234" stroke-width="2.208065956365317" /><line x1="256" y1="256" x2="380.69796037174683" y2="99.63370350639414" stroke="white" stroke-opacity="0.10243004395160825" stroke-width="2.075570500921458" /><line x1="256" y1="256" x2="394.2125297973729" y2="111.44102723452167" stroke="black" stroke-opacity="0.11222271907608956" stroke-width="2.5891467346809804" /><line x1="256" y1="256" x2="406.6142932007223" y2="124.41225481205757" stroke="white" stroke-opacity="0.08994839042425157" stroke-width="1.8065219288691878" /><line x1="256" y1="256" x2="417.80339887498945" y2="138.44294954150533" stroke="black" stroke-opacity="0.11461444783490152" stroke-width="1.648401168640703" /><line x1="256" y1="256" x2="427.6897587203732" y2="153.42014451881874" stroke="white" stroke-opacity="0.06524237024132162" stroke-width="1.197389633860439" /><line x1="256" y1="256" x2="436.1937735804838" y2="169.22325217648833" stroke="black" stroke-opacity="0.13121308675035837" stroke-width="2.4067276548594236" /><line x1="256" y1="256" x2="443.2469741279475" y2="185.7250351837316" stroke="white" stroke-opacity="0.08880894831381739" stroke-width="1.024141543544829" /><line x1="256" y1="256" x2="448.7925721391707" y2="202.7926308866651" stroke="black" stroke-opacity="0.12434875504113735" stroke-width="1.3661153595894575" /><line x1="256" y1="256" x2="452.78591771972594" y2="220.28862104027263" stroke="white" stroke-opacity="0.055313910474069417" stroke-width="1.5941906021907926" /><line x1="256" y1="256" x2="455.1948587990478" y2="238.07213821931344" stroke="black" stroke-opacity="0.11319608783815056" stroke-width="2.391814785543829" />
+    </g>
+    <circle cx="256" cy="126.48920101020485" r="7.704174834303558" fill="#cbd5e1" /><circle cx="320.7553994948976" cy="143.8403580104174" r="2.435543218627572" fill="#cbd5e1" /><circle cx="368.1596419895826" cy="191.24460050510243" r="3.687920884229243" fill="#cbd5e1" /><circle cx="385.51079898979515" cy="256" r="5.273617536062375" fill="#cbd5e1" /><circle cx="368.1596419895826" cy="320.7553994948976" r="3.0235365158878267" fill="#cbd5e1" /><circle cx="320.7553994948976" cy="368.1596419895826" r="3.322266033384949" fill="#cbd5e1" /><circle cx="256" cy="385.51079898979515" r="7.886124001350254" fill="#cbd5e1" /><circle cx="191.24460050510245" cy="368.1596419895826" r="3.7825741805136204" fill="#cbd5e1" /><circle cx="143.8403580104174" cy="320.75539949489763" r="2.9067089962773025" fill="#cbd5e1" /><circle cx="126.48920101020485" cy="256" r="6.944150591501966" fill="#cbd5e1" /><circle cx="143.8403580104174" cy="191.24460050510243" r="2.424409709405154" fill="#cbd5e1" /><circle cx="191.24460050510237" cy="143.84035801041742" r="2.960551074706018" fill="#cbd5e1" />
+    <text x="256" y="191" fill="#cbd5e1" font-family="'Monotype Corsiva', cursive" font-size="22" font-style="italic" text-anchor="middle" dominant-baseline="middle" filter="url(#tg_2128_watchAlt)">LuxuryPunks</text>
+    <g transform="translate(256,256)">
+        <g class="hr-hand" transform="rotate(180.05378333333334)">
+            <animateTransform attributeName="transform" type="rotate" from="180.05378333333334" to="540.0537833333333" dur="43200s" repeatCount="indefinite"/>
+            <path d="M -5.758501845411956 20 L -2.879250922705978 -40 A 19.635727148037404 19.635727148037404 0 1 1 2.879250922705978 -40 L 5.758501845411956 20 Z" fill="#fbbf24" stroke="#334155" stroke-width="1"/><circle cx="0" cy="-56.635727148037404" r="19.635727148037404" fill="none" stroke="#334155" stroke-width="1"/><line x1="0" y1="-40" x2="0" y2="-75.34430886646733" stroke="#334155" stroke-width="1"/><line x1="-19.635727148037404" y1="-56.635727148037404" x2="19.635727148037404" y2="-56.635727148037404" stroke="#334155" stroke-width="1"/>
+        </g>
+        <g class="mn-hand" transform="rotate(0.6454)">
+            <animateTransform attributeName="transform" type="rotate" from="0.6454" to="360.6454" dur="3600s" repeatCount="indefinite"/>
+            <polygon points="-7.456816423684359,0 0,-120 7.456816423684359,0 0,25" fill="#fbbf24" stroke="#334155" stroke-width="1"/>
+        </g>
+        <g class="sc-hand" transform="rotate(38.724)">
+            <animateTransform attributeName="transform" type="rotate" from="38.724" to="398.724" dur="60s" repeatCount="indefinite"/>
+            <rect x="-2" y="-135" width="4" height="160" fill="#ef4444" />
+        </g>
+    </g>
+</g></g>
+
+<!-- COMMON STATIC TOP LAYERS -->
+
+<g transform="rotate(-90, 10, 450)">
+    <text x="10" y="450" class="tm-text">2128 made by LuxuryEditionz</text>
+    <text x="10" y="450" fill="url(#dp_2128)" style="font-family:'Courier New', monospace; font-size:4.5px; font-weight:bold; opacity:0.8">2128 made by LuxuryEditionz</text>
+</g>
+
+<!-- JS DYNAMIC SYNCHRONIZER SCRIPT -->
+<script type="text/javascript">
+<![CDATA[
+(function(){"use strict";
+try{
+  var bg0 = document.getElementById('bg0_2128');
+  var bg1 = document.getElementById('bg1_2128');
+  var cloth0 = document.getElementById('cloth0_2128');
+  var cloth1 = document.getElementById('cloth1_2128');
+  var watch0 = document.getElementById('watch0_2128');
+  var watch1 = document.getElementById('watch1_2128');
+
+  // === 1. MULTI-CLICK DYNAMIC TRAIT CUSTOMIZATION ===
+  var bgState = 0;
+  var clothState = 0;
+  var watchState = 0;
+
+  var clickCount = 0;
+  var clickTimer = null;
+
+  var svgEl = document.getElementById('punk-svg-2128');
+  if (svgEl) {
+      svgEl.addEventListener('click', function(e) {
+          // Ignore clicks specifically targeting the watch face color toggle
+          if (e.target && e.target.getAttribute && e.target.getAttribute('class') === 'watch-face') return;
+
+          clickCount++;
+          clearTimeout(clickTimer);
+
+          clickTimer = setTimeout(function() {
+              if (clickCount === 1) {
+                  bgState = 1 - bgState;
+                  if (bg0) bg0.style.display = bgState ? 'none' : '';
+                  if (bg1) bg1.style.display = bgState ? '' : 'none';
+              } else if (clickCount === 2) {
+                  clothState = 1 - clothState;
+                  if (cloth0) cloth0.style.display = clothState ? 'none' : '';
+                  if (cloth1) cloth1.style.display = clothState ? '' : 'none';
+              } else if (clickCount >= 3) {
+                  watchState = 1 - watchState;
+                  if (watch0) watch0.style.display = watchState ? 'none' : '';
+                  if (watch1) watch1.style.display = watchState ? '' : 'none';
+                  if (watchState) tick(); // Force immediate real-time update when watch becomes visible
+              }
+              clickCount = 0;
+          }, 400); // 400ms multi-tap window for mobile/pc
+      });
+  }
+
+  // === 2. REAL-TIME WATCH CLOCK SYNC ===
+  var hs = [].slice.call(document.querySelectorAll('#punk-svg-2128 .hr-hand'));
+  var ms = [].slice.call(document.querySelectorAll('#punk-svg-2128 .mn-hand'));
+  var ss = [].slice.call(document.querySelectorAll('#punk-svg-2128 .sc-hand'));
+
+  // Strip SMIL animations so JS has exclusive control
+  hs.concat(ms, ss).forEach(function(el) {
+    var a = el.querySelector('animateTransform');
+    if (a) a.parentNode.removeChild(a);
+  });
+
+  function tick() {
+    var d = new Date();
+    var sec = d.getSeconds();
+    var min = d.getMinutes();
+    var hr = d.getHours();
+    var sRot = sec * 6;
+    var mRot = min * 6 + sec * 0.1;
+    var hRot = (hr % 12) * 30 + min * 0.5;
+    // Use SVG attribute syntax (no 'deg' unit) — reliable on hidden elements
+    ss.forEach(function(e) { e.setAttribute('transform', 'rotate(' + sRot + ')'); });
+    ms.forEach(function(e) { e.setAttribute('transform', 'rotate(' + mRot + ')'); });
+    hs.forEach(function(e) { e.setAttribute('transform', 'rotate(' + hRot + ')'); });
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // Safe interactivity example: Click to toggle watch face outline color
+  var faces = [].slice.call(document.querySelectorAll('#punk-svg-2128 .watch-face'));
+  faces.forEach(function(face) {
+      face.addEventListener('click', function() {
+          var colors = ['#4a4ae0', '#4ae0a0', '#e04a4a', '#e0a04a', '#ffffff'];
+          var randomColor = colors[Math.floor(Math.random() * colors.length)];
+          face.setAttribute('stroke', randomColor);
+      });
+  });
+}catch(e){/* Graceful degradation — CSS animations still render if JS is blocked */}
+})();
+]]>
+</script>
+</svg>
